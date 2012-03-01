@@ -78,6 +78,37 @@
 			</nav>
 			<div class="clearfix"></div>
 			<h3 id="draft-link">On Draft</h3>
+			<h3 id="draft-link">Signature Cocktails</h3>
+			<section id="twitter-div">
+			<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+			<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 4,
+			  interval: 30000,
+			  width: 250,
+			  height: 300,
+			  theme: {
+			    shell: {
+			      background: '#333333',
+			      color: '#ffffff'
+			    },
+			    tweets: {
+			      background: '#000000',
+			      color: '#ffffff',
+			      links: '#e6c96a'
+			    }
+			  },
+			  features: {
+			    scrollbar: false,
+			    loop: false,
+			    live: false,
+			    behavior: 'all'
+			  }
+			}).render().setUser('stoddardspub').start();
+			</script>
+			</section>
 		</div> <!-- end of left column div -->
 		
 		<div id="spacer-div" class="grid_1">&nbsp;</div> <!-- empty column -->
